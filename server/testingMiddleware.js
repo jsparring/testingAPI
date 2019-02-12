@@ -12,13 +12,15 @@ const test = {
       next();
     }
 
+    // console.log(req.params['0']);
+
     Promise.resolve(
       spawn('node', [path.join(__dirname, './testingBoilerPlate.js')], {
         stdio: ['pipe', 'pipe', 'pipe', 'ipc'],
         shell: true,
         env: {
           method: req.callback,
-          name: req.query
+          name: req.params['0']
         }
       })
     )

@@ -1,4 +1,4 @@
-const pattern = ['process.', 'fork', 'spawn'];
+const pattern = ['process.', 'fork', 'spawn', 'TABLE', 'DATABASE'];
 
 function sanitize(fnStr) {
   return pattern.some(target => {

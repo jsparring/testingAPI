@@ -1,6 +1,7 @@
 const sendResponse = {
   sendJSON: (req, res) => {
-    const body = JSON.stringify(res.locals);
+    // console.log(res.locals);
+    const body = JSON.stringify(res.locals.body.body);
     res.set({
       'Content-Type': 'application/json'
     });

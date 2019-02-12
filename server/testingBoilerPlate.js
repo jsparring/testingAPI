@@ -9,6 +9,7 @@ const reporter = {
   // jasmineStarted: info => console.log(info),
   // suiteDone: result => console.log(result),
   specDone: result => {
+    console.log(result);
     if (result.status === 'failed') {
       result.failedExpectations.forEach(test => {
         body.tests.push(new IndividualTest(test.message));

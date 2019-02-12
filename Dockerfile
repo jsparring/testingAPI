@@ -1,6 +1,6 @@
-FROM node:alpine
+FROM node:slim
 
-WORKDIR /home/websocket
+WORKDIR /home/testingAPI
 
 COPY ./package.json ./
 
