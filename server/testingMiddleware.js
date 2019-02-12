@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 const path = require('path');
 const { StringDecoder } = require('string_decoder');
-const sanitize = require('./util.js');
+const { sanitize } = require('./util.js');
 
 const decoder = new StringDecoder('utf-8');
 
