@@ -13,7 +13,7 @@ const test = {
     }
 
     Promise.resolve(
-      spawn('node', [path.join(__dirname, './Testing.js')], {
+      spawn('node', [path.join(__dirname, './testingBoilerPlate.js')], {
         stdio: ['pipe', 'pipe', 'pipe', 'ipc'],
         shell: true,
         env: {

@@ -1,5 +1,5 @@
 const Jasmine = require('jasmine');
-const { TestBody, IndividualTest } = require('./testBodyConstructors');
+const { TestBody, IndividualTest } = require('./testBodyConstructors.js');
 
 const jasmine = new Jasmine();
 
@@ -26,7 +26,7 @@ const reporter = {
 
 jasmine.loadConfig({
   spec_dir: 'spec',
-  spec_files: [`../Tests/${process.env.name}.js`]
+  spec_files: [`../testDir/${process.env.name}.js`]
 });
 
 jasmine.addReporter(reporter);
